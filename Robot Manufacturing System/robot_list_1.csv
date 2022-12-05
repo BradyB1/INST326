@@ -1,0 +1,10 @@
+Robot,HAL1,100001,2022,Lithium-Ion
+Robot,HAL2,100002,2021,Lithium-Ion
+Robot,HAL3,100003,2020,Nickel-Metal-Hydride
+Robot,HAL4,100004,2021,Nickel-Metal-Hydride
+Robot,HAL5,100005,2022,Lead-Acid
+MedicalRobot,MED1,200001,2022,Lithium-Ion,General
+MedicalRobot,MED2,200002,2022,Lithium-Ion,Orthopedic
+MedicalRobot,MED3,200003,2022,Nickel-Metal-Hydride,Geriatric
+DriverRobot,DRV1,300001,2022,Lithium-Ion,PA,A-123
+DriverRobot,DRV2,300002,2022,Nickel-Metal-Hydride,MD,B-123
