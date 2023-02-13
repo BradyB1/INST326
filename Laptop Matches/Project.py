@@ -1,4 +1,4 @@
-# Brady Buttrey, Matthew Krivitskiy, Carlos Osorio, Luis Valderrama
+# Brady Buttrey
 # Professor Bill Farmer
 # INST 326: Final Project
 # 12/15/2022
@@ -15,7 +15,7 @@ Using this software, users can input their desired laptop components and if two 
 '''
 
 
-def SearchOption():  # Matthew
+def SearchOption():
     '''This function will ask the user if they want to search by specs or price alone.
 
     args:
@@ -37,7 +37,7 @@ def SearchOption():  # Matthew
     return searchBy
 
 
-def price_display(laptop_data, order):  # Carlos
+def price_display(laptop_data, order): 
     '''this method checks the users display desire and sorts the objects in ascending or descending
 
     args:
@@ -56,7 +56,7 @@ def price_display(laptop_data, order):  # Carlos
     return x
 
 
-def get_price_range():  # Matthews
+def get_price_range(): 
     '''This function will collect the users price and convert it to INR currency
 
     args:
@@ -78,7 +78,7 @@ def get_price_range():  # Matthews
     return Price
 
 
-def price_loop(laptop_data, Price):  # Brady and luis
+def price_loop(laptop_data, Price): 
     '''This method find all the laptops within the given price range, creates objects of those laptops, and appends them to a list.
 
     args: 
@@ -98,7 +98,7 @@ def price_loop(laptop_data, Price):  # Brady and luis
     return price_laptops
 
 
-def price_option():  # carlos
+def price_option():
     '''This fuction with ask the user how they want the laptops displayed (ascending or decending)
 
     display_choice(str): Takes the users input on what order they want the laptops displayed
@@ -121,7 +121,7 @@ def price_option():  # carlos
     return display_choice
 
 
-def write_to_file(laptop_data):  # luis
+def write_to_file(laptop_data):
     '''this method writes the laptop objects to the sorted.txt file
 
     '''
@@ -131,7 +131,7 @@ def write_to_file(laptop_data):  # luis
                     i.ram + " " + i.memory + " " + i.gpu + " " + i.opSys + " " + i.weight + " " + str(i.price) + "\n")
 
 
-class Laptop():  # Brady
+class Laptop():  
     '''this class will be the laptop objects created from matching laptops
 
     attributes:
@@ -150,7 +150,7 @@ class Laptop():  # Brady
 
     '''
 
-    def __init__(self, id, company, typeName, inches, resolution, cpu, ram, memory, gpu, opSys, weight, price):  # Brady
+    def __init__(self, id, company, typeName, inches, resolution, cpu, ram, memory, gpu, opSys, weight, price):  
         '''initializes a Laptop object
 
         attributes:
@@ -182,7 +182,7 @@ class Laptop():  # Brady
         self.price = price
 
 
-def userDesires(laptop_data):  # Carlos
+def userDesires(laptop_data):  
     '''This function will take the user desire/inputed components and make them key value pairs.
 Args:
     UserCompany(str): users desired company
@@ -303,7 +303,7 @@ returns:
     return specs
 
 
-def specs_filter(specs, laptop_data):  # Brady
+def specs_filter(specs, laptop_data):  
     '''This function will check if at least two or more components are matching the users desires, create Laptop objects, and append them to a list.
 
     args:
@@ -339,7 +339,7 @@ def specs_filter(specs, laptop_data):  # Brady
     return specs_laptops
 
 
-def main(filename):  # Brady & Carlos
+def main(filename):  
     '''
     openes and reads into the laptop_data file 
     '''
